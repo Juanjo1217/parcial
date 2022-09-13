@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+class library{
+book: str
+books: list
+book_state()
+add_book()
+}
+
+class user{
+book: str
+books: library
+get_book(book)
+return_book(book)
+dysplay_book()
+}
+
+library -- "1" user : borrow
+@enduml
